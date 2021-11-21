@@ -1,4 +1,8 @@
 # EasyPrivacy
+
+[![](https://www.jitpack.io/v/pengxurui/EasyPrivacy.svg)](https://www.jitpack.io/#pengxurui/EasyPrivacy)
+
+
 一个帮助开发者快速找到国内隐私整改问题的工具
 
 Friends。最近几个月，你是否经常会收到应用市场的隐私整改邮件呢？是的，在中国用户隐私意识得到强化的同时，针对 App 的隐私规范整改也在一步步收紧，海外（Google Play/App Store）走过的老路，最终我们也得走一遍呀！
