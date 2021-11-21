@@ -93,7 +93,11 @@ class Bit64Feature {
         if (filePath.contains("merged_jni_libs") || filePath.contains("library_jni")) {
             so.pomName = ""
         } else {
-            String[] dirPath = filePath.split('\\\\')
+            String separator = File.separator
+            if (System.properties['os.name'].toLowerCase().contains('windows')) {
+                separator = "\\\\"
+            }
+            String[] dirPath = filePath.split(separator)
             so.pomName = dirPath[dirPath.length - 4]
         }
         return so
