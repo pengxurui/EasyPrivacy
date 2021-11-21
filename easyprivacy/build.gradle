@@ -1,0 +1,36 @@
+plugins {
+    id 'groovy' // Groovy.
+    id 'java-gradle-plugin' // GradlePlugin
+}
+
+group = 'com.github.pengxurui' // My github username
+
+dependencies {
+    // Groovy DSL
+    implementation localGroovy()
+    // Gradle DSL
+    implementation gradleApi()
+}
+
+sourceSets {
+    main {
+        groovy {
+            srcDir 'src/main/groovy'
+        }
+
+        resources {
+            srcDir 'src/main/resources'
+        }
+    }
+}
+
+gradlePlugin {
+    plugins {
+        modularPlugin {
+            // Plugin id.
+            id = 'com.pengxr.easyprivacy'
+            // Plugin implementation.
+            implementationClass = 'com.pengxr.easyprivacy.EasyPrivacyPlugin'
+        }
+    }
+}
