@@ -3,6 +3,20 @@ apply from: '../config.gradle'
 
 project.ext.configAppModule project
 
+//repositories {
+//    flatDir {
+//        dirs 'libs', '../sampleLib/libs'
+//    }
+//}
+
+android{
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
 dependencies {
     implementation SDK.ktx_jdk7
     implementation SDK.core_ktx

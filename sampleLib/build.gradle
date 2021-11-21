@@ -3,5 +3,14 @@ apply from: '../config.gradle'
 
 project.ext.configLibModule project
 
+android{
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
 dependencies {
+    api files('libs/openDefault-4.2.7.aar')
 }
