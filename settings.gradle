@@ -1,2 +1,4 @@
 rootProject.name = "EasyPrivacy"
 include ':sample'
+include ':easyprivacy'
+include ':sampleLib'
