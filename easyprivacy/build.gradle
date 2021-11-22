@@ -1,6 +1,7 @@
 plugins {
     id 'groovy' // Groovy.
     id 'java-gradle-plugin' // GradlePlugin
+    id 'com.github.dcendents.android-maven' // GitHub Maven
 }
 
 group = 'com.github.pengxurui' // My github username
