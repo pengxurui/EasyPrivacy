@@ -13,7 +13,7 @@ buildscript {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath "com.github.dcendents:android-maven-gradle-plugin:1.5" // GitHub Maven 插件
 
-        classpath project(":easyprivacy")
+//        classpath project(":easyprivacy")
     }
 }
 
