@@ -7,13 +7,13 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+        maven { url "https://jitpack.io" }
     }
     dependencies {
         classpath "com.android.tools.build:gradle:4.2.1"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath "com.github.dcendents:android-maven-gradle-plugin:1.5" // GitHub Maven 插件
-
-//        classpath project(":easyprivacy")
+        classpath 'com.github.pengxurui:EasyPrivacy:v1.0.2'
     }
 }
 
