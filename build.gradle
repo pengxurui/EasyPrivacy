@@ -5,22 +5,29 @@ apply from: 'dependencies.gradle'
 buildscript {
     ext.kotlin_version = "1.4.31"
     repositories {
+        maven { url 'https://maven.aliyun.com/repository/central' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url "https://jitpack.io" }
         google()
         mavenCentral()
-        maven { url "https://jitpack.io" }
     }
     dependencies {
         classpath "com.android.tools.build:gradle:4.2.1"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        classpath "com.github.dcendents:android-maven-gradle-plugin:1.5" // GitHub Maven 插件
+        // GitHub Maven 插件
+        classpath "com.github.dcendents:android-maven-gradle-plugin:1.5"
         classpath 'com.github.pengxurui:EasyPrivacy:v1.0.2'
     }
 }
 
 allprojects {
     repositories {
-        maven { url 'http://maven.aliyun.com/nexus/content/repositories/google' }
-        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'https://maven.aliyun.com/repository/central' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
         maven { url "https://jitpack.io" }
         google()
         mavenCentral()
