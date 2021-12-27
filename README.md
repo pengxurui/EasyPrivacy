@@ -120,7 +120,7 @@ buildscript {
     }
     dependencies {
         ...
-        classpath 'com.github.pengxurui:EasyPrivacy:v1.0.3
+        classpath 'com.github.pengxurui:EasyPrivacy:v1.0.5
     }
 }
 ```
