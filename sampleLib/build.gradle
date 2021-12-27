@@ -1,4 +1,4 @@
-apply plugin: 'com.pengxr.easyprivacy'
+// apply plugin: 'com.pengxr.easyprivacy'
 apply from: '../config.gradle'
 
 project.ext.configLibModule project
