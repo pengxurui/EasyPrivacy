@@ -26,7 +26,7 @@ class Bit64Feature {
             }
 
             // 2. Create detect task.
-            project.getTasks().create("support 64-bit abi") {
+            project.getTasks().create("support64BitAbi") {
                 group "privacy"
                 dependsOn mergeNativeTask
 
