@@ -4,6 +4,9 @@
   <a>
     <img src="https://www.jitpack.io/v/pengxurui/EasyPrivacy.svg">
   </a>
+  <a href="https://www.github.com/pengxurui" target="_blank">
+    <img src="https://komarev.com/ghpvc/?username=pengxurui&style=flat&label=👁%20Views">
+  </a>
 </p>
 
 <p align='center'>
