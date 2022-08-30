@@ -18,7 +18,10 @@ buildscript {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         // GitHub Maven 插件
         classpath "com.github.dcendents:android-maven-gradle-plugin:1.5"
-        classpath 'com.github.pengxurui:EasyPrivacy:v1.0.2'
+        if (ENABLE_PLUGIN.toBoolean()) {
+            classpath 'com.github.pengxurui:EasyPrivacy:v1.0.5'
+            // classpath project(":easyprivacy")
+        }
     }
 }
 
